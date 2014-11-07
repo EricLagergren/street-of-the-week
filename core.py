@@ -17,7 +17,6 @@ def iterate_handles(i, msg):
     iterate_handles.index = i
     update.tweet(msg)
 
-
 raw_list = api.GetUserTimeline(screen_name='puyalluppd')
 status_list = [s.text for s in raw_list]
 street_name = scrape.parse_string(status_list)

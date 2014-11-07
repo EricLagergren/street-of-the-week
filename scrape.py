@@ -36,7 +36,6 @@ def parse_string(recent_statuses):
 
     # Strip all ordinal suffixes but keep the numbers
     correct_status = re.sub(regex, r'\1', n_s)
-    # print correct_status
 
     split_list = correct_status.split()
 
